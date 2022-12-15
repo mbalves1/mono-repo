@@ -8,16 +8,26 @@
     ]
   },
   "dependencies": {
-    "types/styled-components": "5.1.25",
-    "@types/node": "^18.11.11",
-    "@types/react": "^18.0.26",
-    "typescript": "^4.9.3"
+    "eslint": "8.14.0",
+    "prettier": "2.6.2",
+    "@types/styled-components": "5.1.25",
+    "@types/node": "^17.0.31",
+    "@types/jest": "27.5.0",
+    "@types/react": "^18.0.8",
+    "typescript": "4.5.5"
   },
   "scripts": {
+    "lint": "yarn workspaces run lint",
+    "test": "yarn workspaces run test",
     "web-public": "yarn workspace @monorepo/web-public",
     "dev:web-public": "yarn web-public dev",
     "build:web-public": "yarn web-public build",
     "start:web-public": "yarn web-public start",
-    "design-system": "yarn workspace @monorepo/design-system"
+    "lint:web-public": "yarn web-public lint",
+    "test:web-public": "yarn web-public test",
+    "design-system": "yarn workspace @monorepo/design-system",
+    "test:design-system": "yarn design-system test",
+    "utils": "yarn workspace @monorepo/utils",
+    "test:utils": "yarn utils test"
   }
 }

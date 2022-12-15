@@ -1,12 +1,19 @@
 {
   "name": "@monorepo/design-system",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint './**/*.{ts,tsx}'"
+  },
   "dependencies": {
-    "styled-components": "^5.3.6"
+    "styled-components": "5.3.5",
+    "@monorepo/utils": "*"
   },
   "devDependencies": {
-    "@monorepo/tsconfig-commons": "*"
+    "@monorepo/test-commons": "*",
+    "@monorepo/tsconfig-commons": "*",
+    "@monorepo/eslint-commons": "*"
   }
 }

@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint './**/*.{ts,tsx}'"
+  },
   "devDependencies": {
-    "@monorepo/tsconfig-commons": "*"
+    "@monorepo/test-commons": "*",
+    "@monorepo/tsconfig-commons": "*",
+    "@monorepo/eslint-commons": "*"
   }
 }

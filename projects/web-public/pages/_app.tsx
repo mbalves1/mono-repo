@@ -8,6 +8,8 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+console.log('aquui')
+
 const theme = {
   colors: {
     primary: '#0070f3',
